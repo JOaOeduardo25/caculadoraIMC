@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de IMC</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center mt-5">Conversor de IMC</h1>
+        <div class="row justify-content-center mt-4">
+            <div class="col-md-6">
+                <form id="imcForm">
+                    <div class="form-group">
+                        <label for="altura"><i class="fas fa-ruler"></i> Altura (m):</label>
+                        <input type="text" class="form-control" id="altura" placeholder="Digite sua altura em metros (ex: 1.82)">
+                    </div>
+                    <div class="form-group">
+                        <label for="peso"><i class="fas fa-weight"></i> Peso (kg):</label>
+                        <input type="text" class="form-control" id="peso" placeholder="Digite seu peso em kg">
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block"><i class="fas fa-calculator"></i> Calcular IMC</button>
+                </form>
+            </div>
+        </div>
+        <div class="row justify-content-center mt-4">
+            <div class="col-md-6">
+                <div id="resultadoIMC" class="alert d-none">
+                    <p>Seu IMC é: <span id="imcValue"></span>. <span id="imcMessage"></span></p>
+                    <a href="https://fasteasy.io/start-age-mix-config-a?branch-name=google&test-name=go19akr&track=true&utm_source=google&utm_medium=cpc&campaign_id=21166644842&adgroup_id=21166644842&ad_id=21166644842&utm_term=&gad_source=1&gclid=Cj0KCQjw_qexBhCoARIsAFgBletpt_hHvOdMCr5VORxKhMVUJ7Az8scVJe0zVlMcVJLqksVom5YoPkUaApalEALw_wcB" target="_blank" class="btn btn-info">Acompanhamento Gratuito</a>
+                    <p id="pesoIdeal" class="mt-3"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Seu JavaScript personalizado -->
+    <script src="script.js"></script>
+</body>
+</html>

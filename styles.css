@@ -1,0 +1,46 @@
+
+body {
+    background-color: #000; /* Cor preta */
+    font-family: Arial, sans-serif;
+    color: #fff; /* Cor do texto branca para contrastar */
+}
+
+.container {
+    margin-top: 50px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.alert {
+    margin-top: 20px;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.form-control {
+    border-radius: 0;
+}
+
+#resultadoIMC {
+    margin-top: 20px;
+}
+
+#resultadoIMC p {
+    margin-bottom: 0;
+}
